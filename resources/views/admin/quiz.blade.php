@@ -9,12 +9,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Soal Quiz</h1>
+            <h1 class="m-0">Data latihan</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="quiz">Home</a></li>
-              <li class="breadcrumb-item active">Quiz</li>
+              <li class="breadcrumb-item active">Data latihan</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

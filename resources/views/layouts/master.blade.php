@@ -91,11 +91,11 @@
             <a href="quiz" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Data pertanyaan</i>
+                Data latihan</i>
               </p>
             </a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a style="margin-top:50px;background:grey;color:white;" href="" class="nav-link">
               <div class="image">
                  <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" style="width: 30px;height:30px;" class="img-circle elevation-2" alt="User Image">
@@ -119,7 +119,7 @@
                 </a>
               </li>
             </ul>
-          </li> -->
+          </li>
 
       <!-- /.sidebar-menu -->
     </div>

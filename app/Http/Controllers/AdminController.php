@@ -6,21 +6,22 @@ use Illuminate\Support\Facades\DB;
 
 use App\Pengguna_Model;
 use App\Quiz_Model;
-use App\Data_akun_Model;
 
 class AdminController extends Controller
 {
 
-    public function master(){
-        $hasil = Data_akun_Model::all();
-        return view('layouts.master',['liat'=>$hasil]);
-
-
-    }
 
     public function dashboard(){
-        return view('admin.dashboard');
+        $hitung_user = count(Pengguna_Model::all());
+        $hitung_latihan = count(Quiz_Model::all());
+        return view('admin.dashboard',[
+            'hitung_user'=>$hitung_user,
+            'hitung_latihan'=>$hitung_latihan,
 
+        
+        ]);
+
+        
     }
 
 

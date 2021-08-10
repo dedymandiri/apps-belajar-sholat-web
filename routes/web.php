@@ -66,3 +66,7 @@ Route::get('data_akun','App\Http\Controllers\AdminController@lihatdata_akun');
 Route::get('edit_data_akun/{id}','App\Http\Controllers\AdminController@editdata_akun');
 Route::post('data_akun/update/{id}','App\Http\Controllers\AdminController@updatedata_akun');
 //---------------------------------------------------------------------batas halaman DATA data_akun dari admin lte
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
