@@ -27,7 +27,7 @@ class AdminController extends Controller
 
     //---------------------------------------------------------------------halaman login  admin
      public function login(){
-        return view('admin.login.index');
+        return view('admin.login.view_login');
     }
 
     //--------------------------------------------------------------------- batas halaman login  admin
@@ -54,8 +54,8 @@ class AdminController extends Controller
     {
 
 	    DB::table('user')->insert([
-		'nama' => $request->nama,
-		'user' => $request->user,
+		'name' => $request->name,
+		'username' => $request->username,
 		'password' => $request->password
 	]);
 
@@ -73,8 +73,8 @@ class AdminController extends Controller
     public function updatepengguna($id, Request $request)
     {
         DB::table('user')->where('id',$request->id)->update([
-            'nama' => $request->nama,
-		    'user' => $request->user,
+            'name' => $request->name,
+		    'username' => $request->username,
 		    'password' => $request->password
         ]);
         //diarahkan ke halaman sejarah

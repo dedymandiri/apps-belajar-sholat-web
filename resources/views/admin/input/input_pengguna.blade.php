@@ -9,12 +9,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Tambah Pengguna</h1>
+            <h1 class="m-0">Tambah data user</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-              <li class="breadcrumb-item active">Pengguna</li>
+              <li class="breadcrumb-item active">Data user</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -25,16 +25,16 @@
 {{ csrf_field() }}
 <br>
   <div class="form-group">
-    <label for="judul">Nama :</label>
-    <input type="text" class="form-control" placeholder="Nama Lengkap" required="required" name="nama">
+    <label for="name">Nama :</label>
+    <input type="text" class="form-control" placeholder="Masukkan nama" required="required" name="name">
   </div>
   <div class="form-group">
-    <label for="tgl_waktu">Email :</label>
-    <input type="email" class="form-control" placeholder="Email " required="required" name="email">
+    <label for="username">Username :</label>
+    <input type="username" class="form-control" placeholder="Masukkan username " required="required" name="username">
   </div>
   <div class="form-group">
-    <label for="tgl_waktu">Password :</label>
-    <input type="password" class="form-control" placeholder="password " required="required" name="password"/>
+    <label for="password">Password :</label>
+    <input type="password" class="form-control" placeholder="Masukkan password " required="required" name="password"/>
   </div>
 
 <!--bagian button-->

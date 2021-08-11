@@ -9,12 +9,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Tambah Quiz</h1>
+            <h1 class="m-0">Tambah data latihan</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-              <li class="breadcrumb-item active">Quiz</li>
+              <li class="breadcrumb-item active">Data latihan</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -37,8 +37,8 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="soal_quiz">Soal Quiz :</label>
-    <input type="text" class="form-control" placeholder="Soal Quiz " required="required" name="soal_quiz">
+    <label for="Pertanyaan">Pertanyaan :</label>
+    <input type="text" class="form-control" placeholder="Masukkan pertanyaan " required="required" name="pertanyaan">
   </div>
   <div class="form-group">
     <label for="pilihan_a">Pilihan A :</label>

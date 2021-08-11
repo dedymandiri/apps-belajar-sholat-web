@@ -65,36 +65,13 @@
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" style="margin-top:-50px;">
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="dashboard" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pengguna" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Data user
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="quiz" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Data latihan</i>
-              </p>
-            </a>
-          </li>
+
           <li class="nav-item">
             <a style="margin-top:50px;background:grey;color:white;" href="" class="nav-link">
               <div class="image">
@@ -121,6 +98,31 @@
             </ul>
           </li>
 
+          <li class="nav-item menu-open">
+            <a href="dashboard" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pengguna" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Data user
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="quiz" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Data latihan</i>
+              </p>
+            </a>
+          </li>
+          
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->

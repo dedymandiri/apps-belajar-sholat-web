@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 //LARAVEL VERSI 8
 
 Route::get('/', function () {
-    return view('/admin/dashboard');
+    return view('/admin/login/view_login');
 });
 
 
@@ -25,7 +25,7 @@ Route::get('master','App\Http\Controllers\AdminController@master');
 Route::get('dashboard','App\Http\Controllers\AdminController@dashboard');
 
 //---------------------------------------------------------------------halaman DATA login dari admin lte
-Route::get('index','App\Http\Controllers\AdminController@login');
+Route::get('view_login','App\Http\Controllers\AdminController@login');
 Route::get('logout', 'App\Http\Controllers\AdminController@logout');
 //---------------------------------------------------------------------batas halaman DATA login dari admin lte
 
