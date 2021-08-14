@@ -36,7 +36,6 @@
       <th class="th-sm"> A</th>
       <th class="th-sm"> B</th>
       <th class="th-sm"> C</th>
-      <th class="th-sm"> D</th>
       <th class="th-sm">Aksi</th>
     </tr>
   </thead>
@@ -53,7 +52,6 @@
         <td>{{ $li->pilihan_a }}</td>
         <td>{{ $li->pilihan_b }}</td>
         <td>{{ $li->pilihan_c }}</td>
-        <td>{{ $li->pilihan_d }}</td>
 
         <td>
             <a href="/edit_quiz/{{ $li->id_quiz }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>

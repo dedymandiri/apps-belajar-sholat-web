@@ -122,7 +122,63 @@
               </p>
             </a>
           </li>
-          
+          <li class="nav-item">
+            <a href="berwudhu" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Berwudhu
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+              Sholat fardhu
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="sholat_subuh" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sholat subuh</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sholat_dzuhur" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sholat dzuhur</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sholat_ashar" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sholat ashar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sholat_maghrib" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sholat maghrib</p>
+                </a>
+              </li>
+               <li class="nav-item">
+                <a href="sholat_isya" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sholat isya</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="tentang_kami" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Tentang kami
+              </p>
+            </a>
+          </li>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->

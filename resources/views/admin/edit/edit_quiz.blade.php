@@ -54,11 +54,6 @@
     <label for="pilihan_c">Pilihan C :</label>
     <input type="text" class="form-control" placeholder="Pilihan_c" required="required" name="pilihan_c" value="{{ $li->pilihan_c }}"/>
   </div>
-  <div class="form-group">
-    <label for="pilihan_d">Pilihan D :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_d" required="required" name="pilihan_d" value="{{ $li->pilihan_d }}"/>
-  </div>
-
   <div style="margin-top:105px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">
     <button style="margin-left:-780px;" type="submit" class="btn btn-primary" value="Simpan">Simpan</button>
   </div>

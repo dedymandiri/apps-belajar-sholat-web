@@ -10,7 +10,7 @@ $q = mysqli_query($conn, "select * from tbl_soal order by rand() limit 10");
  "b"=>$row['b'],
  "c" => $row['c'],
  "jawaban" => $row['jwaban'],
- "gambar" => "http://10.0.2.2:30/kuis/images/".$row['gambar'].""
+ 
  );
  array_push($arr, $temp);
  }
