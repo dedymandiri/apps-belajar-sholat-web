@@ -21,10 +21,11 @@
       </div><!-- /.container-fluid -->
     </div>
 
-  <div class="form-group">
-    <label for="deskripsi">Deskripsi :</label>
-    <textarea style="text-align:justify;" rows="15" type="text" class="form-control" placeholder="Masukkan deskripsi" required="required" name="deskripsi" value="">{{ $li->deskripsi }}</textarea> 
-  </div>
+   <!-- <div style="margin-left:10px;" class="col-sm-4">
+       <a href="/input_wudhu"><button type="button" class="btn btn-success">Tambah Data</button></a>
+       Search form 
+       <input style="margin-top:-40px;margin-left:830px;width:250px" class="form-control" type="text" placeholder="Search" aria-label="Search"> 
+    </div> -->
 
   <table style="margin-left:20px;margin-top:10px;width:1065px;" id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
    <thead>

@@ -22,9 +22,13 @@ class AdminController extends Controller
     public function dashboard(){
         $hitung_user = count(Pengguna_Model::all());
         $hitung_latihan = count(Quiz_Model::all());
+        $hitung_berwudhu = count(Wudhu_Model::all());
+        $hitung_tentang = count(Tentang_Model::all());
         return view('admin.dashboard',[
             'hitung_user'=>$hitung_user,
             'hitung_latihan'=>$hitung_latihan,
+            'hitung_berwudhu'=>$hitung_berwudhu,
+            'hitung_tentang'=>$hitung_tentang
 
         
         ]);
@@ -127,8 +131,7 @@ class AdminController extends Controller
 		'pertanyaan' => $request->pertanyaan,
         'pilihan_a' => $request->pilihan_a,
         'pilihan_b' => $request->pilihan_b,
-        'pilihan_c' => $request->pilihan_c,
-        'pilihan_d' => $request->pilihan_d
+        'pilihan_c' => $request->pilihan_c
 	]);
 
 	    return redirect('quiz');
@@ -149,8 +152,7 @@ class AdminController extends Controller
 		    'pertanyaan' => $request->pertanyaan,
             'pilihan_a' => $request->pilihan_a,
             'pilihan_b' => $request->pilihan_b,
-            'pilihan_c' => $request->pilihan_c,
-            'pilihan_d' => $request->pilihan_d
+            'pilihan_c' => $request->pilihan_c
         ];
 
         DB::table('quiz')->where('id_quiz',$request->id)->update($quiz);

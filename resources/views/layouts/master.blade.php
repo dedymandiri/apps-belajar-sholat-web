@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Halaman Admin</title>
-  <link rel="icon" type="image/png" href="{{ asset('login/images/icons/favicon.ico') }}"/>
+  <title>Admin belajar sholat</title>
+  <link rel="icon" type="image/png" href="{{ asset('admin/dist/img/logo.jpg') }}"/>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') }}">
@@ -33,7 +33,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="{{ asset('admin/dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="{{ asset('admin/dist/img/logo.jpg') }}" alt="AdminLTELogo" height="60" width="60">
   </div>
 
  <!-- Navbar -->
@@ -60,8 +60,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a style="background:#2980b9;color:white;" href="dashboard" class="brand-link">
-      <img src="{{ asset('admin/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
+      <img src="{{ asset('admin/dist/img/logo.jpg') }}" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light"> Admin</span>
     </a>
 
     <!-- Sidebar -->
@@ -193,11 +193,7 @@
 </div>
 
 <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0
-    </div>
+   
   </footer>
 
   <!-- Control Sidebar -->
