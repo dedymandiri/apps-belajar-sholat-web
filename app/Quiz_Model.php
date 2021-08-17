@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class Quiz_Model extends Model
 {
-    protected $table='quiz';
+    protected $table='tbl_soal';
 
 }
 

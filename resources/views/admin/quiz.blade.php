@@ -32,10 +32,11 @@
     <tr>
       <th class="th-sm">No</th>
       <th class="th-sm">Materi</th>
-      <th class="th-sm">Pertanyaan</th>
-      <th class="th-sm"> A</th>
-      <th class="th-sm"> B</th>
-      <th class="th-sm"> C</th>
+      <th class="th-sm">Soal</th>
+      <th class="th-sm">Pilihan A</th>
+      <th class="th-sm">Pilihan B</th>
+      <th class="th-sm">Pilihan C</th>
+      <th class="th-sm"> Jawaban</th>
       <th class="th-sm">Aksi</th>
     </tr>
   </thead>
@@ -48,15 +49,16 @@
     <tr>
         <td>{{ $no }}</td>
         <td>{{ $li->materi }}</td>
-        <td>{{ $li->pertanyaan }}</td>
-        <td>{{ $li->pilihan_a }}</td>
-        <td>{{ $li->pilihan_b }}</td>
-        <td>{{ $li->pilihan_c }}</td>
+        <td>{{ $li->soal }}</td>
+        <td>{{ $li->a }}</td>
+        <td>{{ $li->b }}</td>
+        <td>{{ $li->c }}</td>
+        <td>{{ $li->jwaban }}</td>
 
         <td>
-            <a href="/edit_quiz/{{ $li->id_quiz }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
+            <a href="/edit_quiz/{{ $li->id }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
 
-            <a href="/quiz/hapus/{{ $li->id_quiz }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a>
+            <a href="/quiz/hapus/{{ $li->id }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a>
         </td>
     </tr>
     @endforeach

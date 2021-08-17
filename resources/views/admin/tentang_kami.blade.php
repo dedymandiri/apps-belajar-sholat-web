@@ -45,8 +45,8 @@
   <?php $no++ ;?>
     <tr>
         <td>{{ $no }}</td>
-        <td>{{ $li->judul }}</td>
-        <td style="text-align:justify;">{{ $li->deskripsi }}</td>
+        <td>{{ $li->judul_tentang }}</td>
+        <td style="text-align:justify;">{{ $li->deskripsi_tentang }}</td>
        
 
         <td>

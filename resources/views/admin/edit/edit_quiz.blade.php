@@ -22,7 +22,7 @@
     </div>
 
 @foreach($liat as $li)
-<form style="width:730px;margin-left:35px;" action="/quiz/update/{{ $li->id_quiz }}" method="post">
+<form style="width:730px;margin-left:35px;" action="/quiz/update/{{ $li->id }}" method="post">
 {{ csrf_field() }}
 <br>
   <div class="form-group">
@@ -38,22 +38,28 @@
         <option>Berwudhu</option>
     </select>
   </div>
+
   <div class="form-group">
-    <label for="pertanyaan">Pertanyaan :</label>
-    <input type="text" class="form-control" placeholder="Masukkan pertanyaan " required="required" name="pertanyaan" value="{{ $li->pertanyaan }}"/>
+    <label for="soal">Soal :</label>
+    <input type="text" class="form-control" placeholder="Masukkan soal " required="required" name="soal" value="{{ $li->soal }}"/>
   </div>
   <div class="form-group">
     <label for="pilihan_a">Pilihan A :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_a" required="required" name="pilihan_a" value="{{ $li->pilihan_a }}"/>
+    <input type="text" class="form-control" placeholder="Masukkan pilihan a" required="required" name="a" value="{{ $li->a }}"/>
   </div>
   <div class="form-group">
     <label for="pilihan_b">Pilihan B :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_b" required="required" name="pilihan_b" value="{{ $li->pilihan_b }}"/>
+    <input type="text" class="form-control" placeholder="Masukkan pilihan b" required="required" name="b" value="{{ $li->b }}"/>
   </div>
   <div class="form-group">
     <label for="pilihan_c">Pilihan C :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_c" required="required" name="pilihan_c" value="{{ $li->pilihan_c }}"/>
+    <input type="text" class="form-control" placeholder="Masukkan pilihan c" required="required" name="c" value="{{ $li->c }}"/>
   </div>
+  <div class="form-group">
+    <label for="jwaban">Jawaban :</label>
+    <input type="text" class="form-control" placeholder="Masukkan jwaban" required="required" name="jwaban" value="{{ $li->jwaban }}"/>
+  </div>
+  
   <div style="margin-top:105px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">
     <button style="margin-left:-780px;" type="submit" class="btn btn-primary" value="Simpan">Simpan</button>
   </div>

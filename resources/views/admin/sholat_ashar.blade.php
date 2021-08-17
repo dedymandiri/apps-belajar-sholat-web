@@ -45,14 +45,14 @@
   <?php $no++ ;?>
     <tr>
         <td>{{ $no }}</td>
-        <td>{{ $li->judul }}</td>
-        <td style="text-align:justify;">{{ $li->deskripsi }}</td>
+        <td>{{ $li->judul_ashar }}</td>
+        <td style="text-align:justify;">{{ $li->deskripsi_ashar }}</td>
        
 
         <td>
-            <a href="/edit_ashar/{{ $li->id }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
+            <a href="/edit_ashar/{{ $li->id_ashar }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
 
-            <a href="/sholat_ashar/hapus/{{ $li->id }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a>
+            <a href="/sholat_ashar/hapus/{{ $li->id_ashar }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a>
         </td>
     </tr>
     @endforeach

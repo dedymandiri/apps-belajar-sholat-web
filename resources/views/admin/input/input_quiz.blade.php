@@ -37,20 +37,28 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="Pertanyaan">Pertanyaan :</label>
-    <input type="text" class="form-control" placeholder="Masukkan pertanyaan " required="required" name="pertanyaan">
+    <label for="materi">Materi :</label>
+    <input type="text" class="form-control" placeholder="Masukkan materi " required="required" name="materi">
+  </div>
+  <div class="form-group">
+    <label for="soal">Soal :</label>
+    <input type="text" class="form-control" placeholder="Masukkan soal " required="required" name="soal">
   </div>
   <div class="form-group">
     <label for="pilihan_a">Pilihan A :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_a" required="required" name="pilihan_a">
+    <input type="text" class="form-control" placeholder="Masukkan pilihan a" required="required" name="a">
   </div>
   <div class="form-group">
     <label for="pilihan_b">Pilihan B :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_b" required="required" name="pilihan_b">
+    <input type="text" class="form-control" placeholder="Masukkan pilihan b" required="required" name="b">
   </div>
   <div class="form-group">
     <label for="pilihan_c">Pilihan C :</label>
-    <input type="text" class="form-control" placeholder="Pilihan_c" required="required" name="pilihan_c">
+    <input type="text" class="form-control" placeholder="Masukkan pilihan c" required="required" name="c">
+  </div>
+  <div class="form-group">
+    <label for="jwaban">Jawaban :</label>
+    <input type="text" class="form-control" placeholder="Masukkan jawaban" required="required" name="jwaban">
   </div>
 <!--bagian button-->
 <div style="margin-top:105px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">

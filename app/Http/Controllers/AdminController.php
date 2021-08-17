@@ -126,12 +126,13 @@ class AdminController extends Controller
     public function storequiz(Request $request)
     {
 
-	    DB::table('quiz')->insert([
+	    DB::table('tbl_soal')->insert([
 		'materi' => $request->materi,
-		'pertanyaan' => $request->pertanyaan,
-        'pilihan_a' => $request->pilihan_a,
-        'pilihan_b' => $request->pilihan_b,
-        'pilihan_c' => $request->pilihan_c
+		'soal' => $request->soal,
+        'a' => $request->a,
+        'b' => $request->b,
+        'c' => $request->c,
+        'jwaban' => $request->jwaban
 	]);
 
 	    return redirect('quiz');
@@ -140,7 +141,7 @@ class AdminController extends Controller
 
     //edit data
     public function editquiz($id){
-        $hasil = Quiz_Model::where('id_quiz',$id)->get();
+        $hasil = Quiz_Model::where('id',$id)->get();
         return view('admin.edit.edit_quiz',['liat'=>$hasil]);
     }
 
@@ -149,13 +150,14 @@ class AdminController extends Controller
     {
         $quiz = [
             'materi' => $request->materi,
-		    'pertanyaan' => $request->pertanyaan,
-            'pilihan_a' => $request->pilihan_a,
-            'pilihan_b' => $request->pilihan_b,
-            'pilihan_c' => $request->pilihan_c
+            'soal' => $request->soal,
+            'a' => $request->a,
+            'b' => $request->b,
+            'c' => $request->c,
+            'jwaban' => $request->jwaban
         ];
 
-        DB::table('quiz')->where('id_quiz',$request->id)->update($quiz);
+        DB::table('tbl_soal')->where('id',$request->id)->update($quiz);
         return redirect('quiz');
     }
 
@@ -164,7 +166,7 @@ class AdminController extends Controller
     public function hapusquiz($id)
     {
 
-	    DB::table('quiz')->where('id_quiz',$id)->delete();
+	    DB::table('quiz')->where('id',$id)->delete();
 
 
 	    return redirect('quiz');
@@ -194,8 +196,8 @@ class AdminController extends Controller
     {
 
 	    DB::table('tbl_wudhu')->insert([
-		'judul' => $request->judul,
-		'deskripsi' => $request->deskripsi
+		'judul_wudhu' => $request->judul_wudhu,
+		'deskripsi_wudhu' => $request->deskripsi_wudhu
         
 	]);
 
@@ -205,7 +207,7 @@ class AdminController extends Controller
 
     //edit data
     public function editwudhu($id){
-        $hasil = Wudhu_Model::where('id',$id)->get();
+        $hasil = Wudhu_Model::where('id_wudhu',$id)->get();
         return view('admin.edit.edit_wudhu',['liat'=>$hasil]);
     }
 
@@ -213,8 +215,8 @@ class AdminController extends Controller
     public function updatewudhu($id, Request $request)
     {
         $wudhu = [
-            'judul' => $request->judul,
-		    'deskripsi' => $request->deskripsi
+            'judul_wudhu' => $request->judul_wudhu,
+		    'deskripsi_wudhu' => $request->deskripsi_wudhu
 
         ];
 
@@ -458,7 +460,7 @@ class AdminController extends Controller
 
     //edit data
     public function editmaghrib($id){
-        $hasil = Maghrib_Model::where('id',$id)->get();
+        $hasil = Maghrib_Model::where('id_maghrib',$id)->get();
         return view('admin.edit.edit_maghrib',['liat'=>$hasil]);
     }
 
@@ -466,8 +468,8 @@ class AdminController extends Controller
     public function updatemaghrib($id, Request $request)
     {
         $maghrib = [
-            'judul' => $request->judul,
-		    'deskripsi' => $request->deskripsi
+            'judul_maghrib' => $request->judul_maghrib,
+		    'deskripsi_maghrib' => $request->deskripsi_maghrib
 
         ];
 

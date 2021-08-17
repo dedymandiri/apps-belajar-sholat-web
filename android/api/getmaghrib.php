@@ -8,7 +8,7 @@ include 'koneksi.php';
 	$response = [];//data response
 
 	//cek username didalam database
-	$userQuery = $connection->prepare("SELECT * FROM  `tbl_tentangkami` ");
+	$userQuery = $connection->prepare("SELECT * FROM  `tbl_sholatmaghrib");
 	$userQuery->execute();
 
 		while($row = $userQuery->fetch(PDO::FETCH_ASSOC)){
@@ -16,8 +16,8 @@ include 'koneksi.php';
             $response['message'] = "data berhasil";
             $response['data'] = [
 				'id' => $row['id'],
-				'judulabout' => $row['judul'],
-				'deskripsiabout' => $row['deskripsi']
+				'judulmaghrib' => $row['judul'],
+				'deskripsimaghrib' => $row['deskripsi']
 				
 			];
 		}
