@@ -449,8 +449,8 @@ class AdminController extends Controller
     {
 
 	    DB::table('tbl_sholatmaghrib')->insert([
-		'judul' => $request->judul,
-		'deskripsi' => $request->deskripsi
+		'judul+magh' => $request->judul,
+		'deskripsi_' => $request->deskripsi
         
 	]);
 
@@ -514,8 +514,8 @@ class AdminController extends Controller
     {
 
 	    DB::table('tbl_sholatisya')->insert([
-		'judul' => $request->judul,
-		'deskripsi' => $request->deskripsi
+		'judul_isya' => $request->judul_isya,
+		'deskripsi_isya' => $request->deskripsi_isya
         
 	]);
 
@@ -533,8 +533,8 @@ class AdminController extends Controller
     public function updateisya($id, Request $request)
     {
         $isya = [
-            'judul' => $request->judul,
-		    'deskripsi' => $request->deskripsi
+            'judul_isya' => $request->judul_isya,
+		    'deskripsi_isya' => $request->deskripsi_isya
 
         ];
 

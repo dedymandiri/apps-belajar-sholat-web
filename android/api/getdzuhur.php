@@ -15,9 +15,9 @@ include 'koneksi.php';
 			$response['status'] = true;
             $response['message'] = "data berhasil";
             $response['data'] = [
-				'id' => $row['id'],
-				'juduldzuhur' => $row['judul'],
-				'deskripsidzuhur' => $row['deskripsi']
+				'id_dzuhur' => $row['id_dzuhur'],
+				'judul_dzuhur' => $row['judul_dzuhur'],
+				'deskripsi_dzuhur' => $row['deskripsi_dzuhur']
 				
 			];
 		}
