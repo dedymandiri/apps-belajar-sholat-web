@@ -50,9 +50,9 @@
        
 
         <td>
-            <a href="/edit_wudhu/{{ $li->id }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
+            <a href="/edit_wudhu/{{ $li->id_wudhu }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
 
-            <a href="/sholat_wudhu/hapus/{{ $li->id }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a>
+            <!-- <a href="/sholat_wudhu/hapus/{{ $li->id_wudhu }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a> -->
         </td>
     </tr>
     @endforeach

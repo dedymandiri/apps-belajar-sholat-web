@@ -27,11 +27,11 @@
 <br>
   <div class="form-group">
     <label for="judul">Judul :</label>
-    <input type="text" class="form-control" placeholder="Masukkan judul" required="required" name="judul" value="{{ $li->judul }}"/>
+    <input type="text" class="form-control" placeholder="Masukkan judul" required="required" name="judul_subuh" value="{{ $li->judul_subuh }}"/>
   </div>
   <div class="form-group">
     <label for="deskripsi">Deskripsi :</label>
-    <textarea style="text-align:justify;" rows="15" type="text" class="form-control" placeholder="Masukkan deskripsi" required="required" name="deskripsi" value="">{{ $li->deskripsi }}</textarea> 
+    <textarea style="text-align:justify;" rows="15" type="text" class="form-control" placeholder="Masukkan deskripsi" required="required" name="deskripsi_subuh" value="">{{ $li->deskripsi_subuh }}</textarea> 
   </div>
 
   <div style="margin-top:105px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">

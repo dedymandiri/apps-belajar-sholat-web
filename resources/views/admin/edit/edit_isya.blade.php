@@ -22,21 +22,23 @@
     </div>
 
 @foreach($liat as $li)
-<form style="width:730px;margin-left:35px;" action="/sholat_isya/update/{{ $li->id }}" method="post">
+<form style="width:730px;margin-left:35px;" action="/sholat_isya/update/{{ $li->id_isya }}" method="post">
 {{ csrf_field() }}
 <br>
   <div class="form-group">
     <label for="judul">Judul :</label>
-    <input type="text" class="form-control" placeholder="Masukkan judul" required="required" name="judul" value="{{ $li->judul }}"/>
+    <input type="text" class="form-control" placeholder="Masukkan judul" required="required" name="judul_isya" value="{{ $li->judul_isya }}"/>
   </div>
   <div class="form-group">
     <label for="deskripsi">Deskripsi :</label>
-    <textarea style="text-align:justify;" rows="15" type="text" class="form-control" placeholder="Masukkan deskripsi" required="required" name="deskripsi" value="">{{ $li->deskripsi }}</textarea> 
+    <textarea style="text-align:justify;" rows="15" type="text" class="form-control" placeholder="Masukkan deskripsi" required="required" name="deskripsi_isya" value="">{{ $li->deskripsi_isya }}</textarea> 
   </div>
   
 
   <div style="margin-top:105px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">
+    
     <button style="margin-left:-780px;" type="submit" class="btn btn-primary" value="Simpan">Simpan</button>
+  
   </div>
 </form>
 @endforeach

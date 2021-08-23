@@ -73,14 +73,9 @@ Route::post('data_akun/update/{id}','App\Http\Controllers\AdminController@update
 Route::get('berwudhu','App\Http\Controllers\AdminController@wudhu');
 //menampilkan data berita dari database
 Route::get('berwudhu', 'App\Http\Controllers\AdminController@lihatwudhu');
-//tambah data berita ke database
-Route::get('input_wudhu', 'App\Http\Controllers\AdminController@tambahwudhu');
-Route::post('berwudhu/storewudhu','App\Http\Controllers\AdminController@storewudhu');
 //edit(update) data berita ke database
-Route::get('edit_wudhu/{id}', 'App\Http\Controllers\AdminController@editwudhu');
-Route::post('berwudhu/update/{id}', 'App\Http\Controllers\AdminController@updatewudhu');
-//hapus data berita
-Route::get('berwudhu/hapus/{id}','App\Http\Controllers\AdminController@hapuswudhu');
+Route::get('edit_wudhu/{id_wudhu}', 'App\Http\Controllers\AdminController@editwudhu');
+Route::post('berwudhu/update/{id_wudhu}', 'App\Http\Controllers\AdminController@updatewudhu');
 //---------------------------------------------------------------------batas halaman DATA BERWUDHU dari admin lte
 
 
@@ -94,8 +89,6 @@ Route::post('sholat_subuh/storesubuh','App\Http\Controllers\AdminController@stor
 //edit(update) data berita ke database
 Route::get('edit_subuh/{id}', 'App\Http\Controllers\AdminController@editsubuh');
 Route::post('sholat_subuh/update/{id}', 'App\Http\Controllers\AdminController@updatesubuh');
-//hapus data berita
-Route::get('sholat_subuh/hapus/{id}','App\Http\Controllers\AdminController@hapussubuh');
 //---------------------------------------------------------------------batas halaman DATA SHOLAT SUBUH dari admin lte
 
 
@@ -104,14 +97,9 @@ Route::get('sholat_subuh/hapus/{id}','App\Http\Controllers\AdminController@hapus
 Route::get('sholat_dzuhur','App\Http\Controllers\AdminController@dzuhur');
 //menampilkan data berita dari database
 Route::get('sholat_dzuhur', 'App\Http\Controllers\AdminController@lihatdzuhur');
-//tambah data berita ke database
-Route::get('input_dzuhur', 'App\Http\Controllers\AdminController@tambahdzuhur');
-Route::post('sholat_dzuhur/storedzuhur','App\Http\Controllers\AdminController@storedzuhur');
 //edit(update) data berita ke database
-Route::get('edit_dzuhur/{id}', 'App\Http\Controllers\AdminController@editdzuhur');
-Route::post('sholat_dzuhur/update/{id}', 'App\Http\Controllers\AdminController@updatedzuhur');
-//hapus data berita
-Route::get('sholat_dzuhur/hapus/{id}','App\Http\Controllers\AdminController@hapusdzuhur');
+Route::get('edit_dzuhur/{id_dzuhur}', 'App\Http\Controllers\AdminController@editdzuhur');
+Route::post('sholat_dzuhur/update/{id_dzuhur}', 'App\Http\Controllers\AdminController@updatedzuhur');
 //---------------------------------------------------------------------batas halaman DATA DZUHUR MAGHRIB dari admin lte
 
 
@@ -120,14 +108,8 @@ Route::get('sholat_dzuhur/hapus/{id}','App\Http\Controllers\AdminController@hapu
 Route::get('sholat_ashar','App\Http\Controllers\AdminController@ashar');
 //menampilkan data berita dari database
 Route::get('sholat_ashar', 'App\Http\Controllers\AdminController@lihatashar');
-//tambah data berita ke database
-Route::get('input_ashar', 'App\Http\Controllers\AdminController@tambahashar');
-Route::post('sholat_ashar/storeashar','App\Http\Controllers\AdminController@storeashar');
-//edit(update) data berita ke database
-Route::get('edit_ashar/{id}', 'App\Http\Controllers\AdminController@editashar');
-Route::post('sholat_ashar/update/{id}', 'App\Http\Controllers\AdminController@updateashar');
-//hapus data berita
-Route::get('sholat_ashar/hapus/{id}','App\Http\Controllers\AdminController@hapusashar');
+Route::get('edit_ashar/{id_ashar}', 'App\Http\Controllers\AdminController@editashar');
+Route::post('sholat_ashar/update/{id_ashar}', 'App\Http\Controllers\AdminController@updateashar');
 //---------------------------------------------------------------------batas halaman DATA SHOLAT ASHAR dari admin lte
 
 
@@ -136,14 +118,9 @@ Route::get('sholat_ashar/hapus/{id}','App\Http\Controllers\AdminController@hapus
 Route::get('sholat_maghrib','App\Http\Controllers\AdminController@maghrib');
 //menampilkan data berita dari database
 Route::get('sholat_maghrib', 'App\Http\Controllers\AdminController@lihatmaghrib');
-//tambah data berita ke database
-Route::get('input_maghrib', 'App\Http\Controllers\AdminController@tambahmaghrib');
-Route::post('sholat_maghrib/storemaghrib','App\Http\Controllers\AdminController@storemaghrib');
 //edit(update) data berita ke database
-Route::get('edit_maghrib/{id}', 'App\Http\Controllers\AdminController@editmaghrib');
-Route::post('sholat_maghrib/update/{id}', 'App\Http\Controllers\AdminController@updatemaghrib');
-//hapus data berita
-Route::get('sholat_maghrib/hapus/{id}','App\Http\Controllers\AdminController@hapusmaghrib');
+Route::get('edit_maghrib/{id_maghrib}', 'App\Http\Controllers\AdminController@editmaghrib');
+Route::post('sholat_maghrib/update/{id_maghrib}', 'App\Http\Controllers\AdminController@updatemaghrib');
 //---------------------------------------------------------------------batas halaman DATA SHOLAT MAGHRIB dari admin lte
 
 
@@ -152,14 +129,9 @@ Route::get('sholat_maghrib/hapus/{id}','App\Http\Controllers\AdminController@hap
 Route::get('sholat_isya','App\Http\Controllers\AdminController@isya');
 //menampilkan data berita dari database
 Route::get('sholat_isya', 'App\Http\Controllers\AdminController@lihatisya');
-//tambah data berita ke database
-Route::get('input_isya', 'App\Http\Controllers\AdminController@tambahisya');
-Route::post('sholat_isya/storeisya','App\Http\Controllers\AdminController@storeisya');
 //edit(update) data berita ke database
-Route::get('edit_isya/{id}', 'App\Http\Controllers\AdminController@editisya');
-Route::post('sholat_isya/update/{id}', 'App\Http\Controllers\AdminController@updateisya');
-//hapus data berita
-Route::get('sholat_isya/hapus/{id}','App\Http\Controllers\AdminController@hapusisya');
+Route::get('edit_isya/{id_isya}', 'App\Http\Controllers\AdminController@editisya');
+Route::post('sholat_isya/update/{id_isya}', 'App\Http\Controllers\AdminController@updateisya');
 //---------------------------------------------------------------------batas halaman DATA SHOLAT ISYA dari admin lte
 
 
@@ -168,15 +140,19 @@ Route::get('sholat_isya/hapus/{id}','App\Http\Controllers\AdminController@hapusi
 Route::get('tentang_kami','App\Http\Controllers\AdminController@tentang');
 //menampilkan data berita dari database
 Route::get('tentang_kami', 'App\Http\Controllers\AdminController@lihattentang');
-//tambah data berita ke database
-Route::get('input_tentang', 'App\Http\Controllers\AdminController@tambahtentang');
-Route::post('tentang_kami/storetentang','App\Http\Controllers\AdminController@storetentang');
 //edit(update) data berita ke database
-Route::get('edit_tentang/{id}', 'App\Http\Controllers\AdminController@edittentang');
-Route::post('tentang_kami/update/{id}', 'App\Http\Controllers\AdminController@updatetentang');
-//hapus data berita
-Route::get('tentang_kami/hapus/{id}','App\Http\Controllers\AdminController@hapustentang');
+Route::get('edit_tentang/{id_tentang}', 'App\Http\Controllers\AdminController@edittentang');
+Route::post('tentang_kami/update/{id_tentang}', 'App\Http\Controllers\AdminController@updatetentang');
 //---------------------------------------------------------------------batas halaman DATA TENTANG KAMI dari admin lte
+
+//---------------------------------------------------------------------halaman DATA PROFILE dari admin lte
+Route::get('profile','App\Http\Controllers\AdminController@profile');
+//menampilkan data berita dari database
+Route::get('profile', 'App\Http\Controllers\AdminController@lihatprofile');
+//edit(update) data berita ke database
+Route::get('edit_profile/{id}', 'App\Http\Controllers\AdminController@editprofile');
+Route::post('profile/update/{id}', 'App\Http\Controllers\AdminController@updateprofile');
+//---------------------------------------------------------------------batas halaman DATA PROFILE dari admin lte
 
 
 Auth::routes();

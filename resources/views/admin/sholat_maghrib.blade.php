@@ -52,7 +52,7 @@
         <td>
             <a href="/edit_maghrib/{{ $li->id_maghrib }}"><button style="width:68px;" title="Edit" type="button"  class="btn btn-warning">Edit</button></a>
 
-            <a href="/sholat_maghrib/hapus/{{ $li->id_maghrib }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a>
+            <!-- <a href="/sholat_maghrib/hapus/{{ $li->id_maghrib }}"><button style="margin-top:5px;" onclick="return confirm('Apakah anda yakin hapus data?')" title="Hapus" type="button" class="btn btn-danger">Hapus</button></a> -->
         </td>
     </tr>
     @endforeach

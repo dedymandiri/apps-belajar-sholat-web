@@ -9,12 +9,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Edit Data Akun</h1>
+            <h1 class="m-0">Edit data profile</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-              <li class="breadcrumb-item active">Data Akun</li>
+              <li class="breadcrumb-item active">Data profile</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -22,16 +22,20 @@
     </div>
 
 @foreach($liat as $li)
-<form style="width:730px;margin-left:35px;" action="/data_akun/update/{{ $li->id_admin }}" method="post">
+<form style="width:730px;margin-left:35px;" action="/profile/update/{{ $li->id }}" method="post">
 {{ csrf_field() }}
 <br>
   <div class="form-group">
     <label for="username">Username :</label>
-    <input type="text" class="form-control" placeholder="username" required="required" name="username" value="{{ $li->username }}"/>
+    <input type="text" class="form-control" placeholder="Masukan username" required="required" name="username" value="{{ $li->username }}"/>
+  </div>
+  <div class="form-group">
+    <label for="name">Name :</label>
+    <input type="name" class="form-control" placeholder="Masukan name " required="required" name="name" value="{{ $li->name }}"/>
   </div>
   <div class="form-group">
     <label for="password">Password :</label>
-    <input type="password" class="form-control" placeholder="password " required="required" name="password" value="{{ $li->password }}"/>
+    <input type="password" class="form-control" placeholder="Masukan password " required="required" name="password" value="{{ $li->password }}"/>
   </div>
 
   <div style="margin-top:105px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">
