@@ -24,13 +24,14 @@
 <form style="width:730px;margin-left:35px;" action="pengguna/storepengguna" method="post">
 {{ csrf_field() }}
 <br>
-  <div class="form-group">
-    <label for="name">Nama :</label>
-    <input type="text" class="form-control" placeholder="Masukkan nama" required="required" name="name">
-  </div>
+  
   <div class="form-group">
     <label for="username">Username :</label>
     <input type="username" class="form-control" placeholder="Masukkan username " required="required" name="username">
+  </div>
+  <div class="form-group">
+    <label for="name">Name :</label>
+    <input type="text" class="form-control" placeholder="Masukkan nama" required="required" name="name">
   </div>
   <div class="form-group">
     <label for="password">Password :</label>

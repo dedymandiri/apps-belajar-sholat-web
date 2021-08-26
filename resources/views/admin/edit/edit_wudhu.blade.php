@@ -22,7 +22,7 @@
     </div>
 
 @foreach($liat as $li)
-<form style="width:730px;margin-left:35px;" action="/berwudhu/update/{{ $li->id_wudhu }}" method="post">
+<form style="width:730px;margin-left:35px;" action="/berwudhu/update/{{$li->id}}" method="post">
 {{ csrf_field() }}
 <br>
   <div class="form-group">
@@ -34,14 +34,13 @@
     <textarea style="text-align:justify;" rows="15" type="text" class="form-control" placeholder="Masukkan deskripsi" required="required" name="deskripsi_wudhu" value="">{{ $li->deskripsi_wudhu }}</textarea>
   </div>
   
-  
 
   <div style="margin-top:80px;width:930px;margin-left:-35px;" class="card-header info-color white-text text-center py-4">
     <button style="margin-left:-780px;" type="submit" class="btn btn-primary" value="Simpan">Simpan</button>
   </div>
+  
 </form>
 @endforeach
-
 </div>
 
 @endsection

@@ -22,12 +22,12 @@ class AdminController extends Controller
 
     public function dashboard(){
         $hitung_user = count(Pengguna_Model::all());
-        $hitung_latihan = count(Quiz_Model::all());
+        $hitung_subuh = count(Subuh_Model::all());
         $hitung_berwudhu = count(Wudhu_Model::all());
         $hitung_tentang = count(Tentang_Model::all());
         return view('admin.dashboard',[
             'hitung_user'=>$hitung_user,
-            'hitung_latihan'=>$hitung_latihan,
+            'hitung_subuh'=>$hitung_subuh,
             'hitung_berwudhu'=>$hitung_berwudhu,
             'hitung_tentang'=>$hitung_tentang
 
@@ -188,25 +188,22 @@ class AdminController extends Controller
     }
 
 
-    //edit data
-    public function editwudhu($id){
-        $hasil = Wudhu_Model::where('id_wudhu',$id)->get();
-        return view('admin.edit.edit_wudhu',['liat'=>$hasil]);
-    }
+   //edit data
+   public function editwudhu($id){
+    $hasil = Wudhu_Model::where('id',$id)->get();
+    return view('admin.edit.edit_wudhu',['liat'=>$hasil]);
+}
 
-    // update data
-    public function updatewudhu($id, Request $request)
-    {
-        DB::table('tbl_wudhu')->where('id_wudhu',$request->$id)->update([
-		    'judul_wudhu' => $request->judul_wudhu,
-		    'deskripsi_wudhu' => $request->deskripsi_wudhu
-        ]);
-        //diarahkan ke halaman sejarah
-        return redirect('berwudhu');
-    }
-
-
-
+// update data
+public function updatewudhu($id, Request $request)
+{
+    DB::table('tbl_wudhu')->where('id',$request->id)->update([
+        'judul_wudhu' => $request->judul_wudhu,
+        'deskripsi_wudhu' => $request->deskripsi_wudhu
+    ]);
+    //diarahkan ke halaman sejarah
+    return redirect('berwudhu');
+}
     //---------------------------------------------------------------------Batas halaman BERWUDHU admin
 
 
@@ -262,7 +259,7 @@ class AdminController extends Controller
    
     //edit data
     public function editdzuhur($id){
-        $hasil = Dzuhur_Model::where('id_dzuhur',$id)->get();
+        $hasil = Dzuhur_Model::where('id',$id)->get();
         return view('admin.edit.edit_dzuhur',['liat'=>$hasil]);
     }
 
@@ -275,10 +272,9 @@ class AdminController extends Controller
 
         ];
 
-        DB::table('tbl_sholatdzuhur')->where('id_dzuhur',$request->id)->update($dzuhur);
+        DB::table('tbl_sholatdzuhur')->where('id',$request->id)->update($dzuhur);
         return redirect('sholat_dzuhur');
     }
-
     //---------------------------------------------------------------------Batas halaman SHOLAT DZUHUR admin
 
 
@@ -297,7 +293,7 @@ class AdminController extends Controller
 
     //edit data
     public function editashar($id){
-        $hasil = Ashar_Model::where('id_ashar',$id)->get();
+        $hasil = Ashar_Model::where('id',$id)->get();
         return view('admin.edit.edit_ashar',['liat'=>$hasil]);
     }
 
@@ -310,7 +306,7 @@ class AdminController extends Controller
 
         ];
 
-        DB::table('tbl_sholatashar')->where('id_ashar',$request->id)->update($ashar);
+        DB::table('tbl_sholatashar')->where('id',$request->id)->update($ashar);
         return redirect('sholat_ashar');
     }
 
@@ -341,7 +337,7 @@ class AdminController extends Controller
 
     //edit data
     public function editmaghrib($id){
-        $hasil = Maghrib_Model::where('id_maghrib',$id)->get();
+        $hasil = Maghrib_Model::where('id',$id)->get();
         return view('admin.edit.edit_maghrib',['liat'=>$hasil]);
     }
 
@@ -354,7 +350,7 @@ class AdminController extends Controller
 
         ];
 
-        DB::table('tbl_sholatmaghrib')->where('id_maghrib',$request->id)->update($maghrib);
+        DB::table('tbl_sholatmaghrib')->where('id',$request->id)->update($maghrib);
         return redirect('sholat_maghrib');
     }
 
@@ -378,7 +374,7 @@ class AdminController extends Controller
     
     //edit data
     public function editisya($id){
-        $hasil = Isya_Model::where('id_isya',$id)->get();
+        $hasil = Isya_Model::where('id',$id)->get();
         return view('admin.edit.edit_isya',['liat'=>$hasil]);
     }
 
@@ -391,7 +387,7 @@ class AdminController extends Controller
 
         ];
 
-        DB::table('tbl_sholatashar')->where('id_isya',$request->id)->update($isya);
+        DB::table('tbl_sholatashar')->where('id',$request->id)->update($isya);
         return redirect('sholat_ashar');
     }
 
@@ -413,20 +409,20 @@ class AdminController extends Controller
 
     //edit data
     public function edittentang($id){
-        $hasil = Tentang_Model::where('id_tentang',$id)->get();
+        $hasil = Tentang_Model::where('id',$id)->get();
         return view('admin.edit.edit_tentang',['liat'=>$hasil]);
     }
 
     // update data
     public function updatetentang($id, Request $request)
     {
-        $wudhu = [
+        $tentang = [
             'judul_tentang' => $request->judul_tentang,
 		    'deskripsi_tentang' => $request->deskripsi_tentang
 
         ];
 
-        DB::table('tbl_tentangkami')->where('id_tentang',$request->id)->update($wudhu);
+        DB::table('tbl_tentangkami')->where('id',$request->id)->update($tentang);
         return redirect('tentang_kami');
     }
 

@@ -22,7 +22,7 @@
     </div>
 
 @foreach($liat as $li)
-<form style="width:730px;margin-left:35px;" action="/sholat_maghrib/update/{{ $li->id_maghrib }}" method="post">
+<form style="width:730px;margin-left:35px;" action="/sholat_maghrib/update/{{ $li->id }}" method="post">
 {{ csrf_field() }}
 <br>
   <div class="form-group">

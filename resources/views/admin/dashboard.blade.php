@@ -59,8 +59,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{{$hitung_latihan}}</h3>
-                <p>Data Latihan</p>
+                <h3>{{$hitung_subuh}}</h3>
+                <p>Data Sholat Subuh</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
