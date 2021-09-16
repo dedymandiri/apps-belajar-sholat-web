@@ -114,14 +114,14 @@
               </p>
             </a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a href="quiz" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Data latihan</i>
               </p>
             </a>
-          </li> -->
+          </li> 
           <li class="nav-item">
             <a href="berwudhu" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
